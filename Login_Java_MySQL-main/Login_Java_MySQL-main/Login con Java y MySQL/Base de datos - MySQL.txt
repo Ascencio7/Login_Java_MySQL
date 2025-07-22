@@ -1,0 +1,17 @@
+//Crear la base de datos:
+create database login;
+
+// Usar la base de datos
+use login;
+
+// Crear la tabla "usuario":
+
+create table usuario(
+id int auto_increment primary key not null,
+ingresoUsuario nvarchar(150),
+ingresoPassword nvarchar(150)
+);
+
+// Ingreso de dos valores para una prueba:
+
+insert into usuario (ingresoUsuario, ingresoPassword) values ('ejemplo@gmail.com', 'contra');
